@@ -1,0 +1,285 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+.navbar-container {
+  height: 40px;
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  padding: 0px 60px;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-container ul {
+  display: flex;
+  gap: 40px;
+}
+
+.navbar-container li {
+  color: rgba(255, 255, 255, 0.7);
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: color 0.5s;
+}
+
+.navbar-container li:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/* SHOWCAISE */
+
+.showcase-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-image: url(./img/showcase.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: color;
+}
+
+.showcase-container h2 {
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.showcase-container p {
+  color: #eee;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #eee;
+}
+
+/* ABOUTme */
+
+.about-me-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 15%;
+  gap: 50px;
+}
+
+.about-me-content img{
+  width: 320px;
+  height: 320px;
+}
+
+.about-me-content p{
+  color: #fff;
+  line-height: 25px;
+}
+
+/* SKILLS */
+
+.skills-content{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+}
+
+.skill-item{
+  width: 250px;
+  padding: 30px;
+  display: flex;
+  margin-top: 4%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+  border-radius: 20px;
+  gap: 20px;
+}
+
+.skill-item img{
+  width: 100px;
+  height: 100px;
+}
+
+.skill-item span{
+  color: #fff;
+  font-weight: 700;
+}
+
+.skill-item p{
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+/* PROJECTS */
+
+.projects-content{
+  display: flex;
+  padding-top: 80px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 80px;
+}
+
+.project-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.project-item img{
+  width:300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.project-text{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 40%;
+  gap: 30px;
+}
+
+.project-text h3{
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+.project-item p{
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 30px;
+}
+
+.project-item:nth-child(2){
+  flex-direction: row-reverse;
+}
+
+/* FORM-CONTENT */
+
+.content-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40%;
+  margin: auto;
+  gap:10px;
+}
+
+.form-input{
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #202020;
+  color: rgba(255, 255, 255, 0.5);
+  resize: none;
+}
+
+.form-input:focus{
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+.form-button{
+  width: 80%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;  
+  background-color: #000 ;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff; 
+}
+
+.form-button:hover{
+  cursor: pointer;
+}
+
+.footer-container{
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.75);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-items{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-items img{
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.footer-container p span{
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+
+
+
+
+/* UTILITIES */
+
+.section-container {
+  width: 100%;
+  background-color: #111;
+}
+
+.section-content{
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  max-width: 1440px;
+}
+
+.section-title{
+  margin: auto;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 6%;
+  width: fit-content;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fff;
+  text-align: center;
+}
+
+
+
+
+
