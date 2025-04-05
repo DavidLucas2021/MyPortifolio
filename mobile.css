@@ -1,0 +1,67 @@
+@media (max-width: 1024px) {
+  .navbar-container {
+    display: none;
+  }
+
+  .showcase-container h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .showcase-container p {
+    font-size: 1.5rem;
+  }
+
+  .about-me-content {
+    flex-direction: column;
+  }
+
+  .about-me-content p {
+    text-align: center;
+  }
+
+  .skills-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-content {
+    padding-top: 20px;
+  }
+
+  .project-item {
+    flex-direction: column;
+  }
+
+  .project-text h3 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .project-item p {
+    text-align: center;
+  }
+
+  .project-item:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    padding: 50px ;
+    gap: 25px;
+  }
+
+  .social-items{
+    gap: 35px;
+  }
+
+  .social-items img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
